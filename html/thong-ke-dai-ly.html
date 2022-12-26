@@ -139,25 +139,48 @@
             <!-- Dashboard -->
             <li class="menu-item active open" style ="">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-table"></i>
+                <i class="menu-icon tf-icons bx bx-layout"></i>
                 <div data-i18n="Layouts">Quản lý đại lý</div>
               </a>
   
-                <ul class="menu-sub active">
-                  <li class="menu-item active">
-                    <a href="Daily1.html" class="menu-link">
-                      <div data-i18n="Without menu">Sản phẩm</div>
+              <ul class="menu-sub active">
+                <li>
+                  <a href="Daily1.html" class="menu-link">
+                    <div >Sản phẩm</div>
+                  </a>
+                </li>
+                
+                <ul class="menu-inner py-1">
+                  <li class="menu-item">
+                    <a href="thong-ke-dai-ly.html" class="menu-link menu-toggle">
+                      <div data-i18n="Without navbar">Thống kê</div>
                     </a>
+                    <ul class="menu-sub">
+                      <li class="menu-item">
+                        <a href="thong-ke-dai-ly.html" class="menu-link">
+                          <div data-i18n="Without menu">Theo tháng</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="thong-ke-dai-ly.html" class="menu-link">
+                          <div data-i18n="Without navbar">Theo quý</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="thong-ke-dai-ly.html" class="menu-link">
+                          <div data-i18n="Container">Theo năm</div>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="menu-item active">
-                    <a href="thong-ke-dai-ly.html" class="menu-link">
-                      <div data-i18n="Without menu">Thống kê</div>
-                    </a>
-                  </li>
-                  <li class="menu-item active">
-                    <a href="javascript:void(0);" class="menu-link">
+                </ul>
+                 
+                  
+                  <li>
+                    <a href="baohanhdaily.html" class="menu-link">
                       <div data-i18n="Without menu">Bảo hành</div>
                     </a>
+                  
                   </li>
                 </ul>
               </li>
@@ -266,19 +289,19 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-                <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Tables /</span> Basic Tables</h4>
+                <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Quản lý đại lý /</span> Bảng thống kê </h4>
   
                 <!-- Basic Bootstrap Table -->
                 <div class="card">
-                  <h5 class="card-header">Table Basic</h5>
+                  <h5 class="card-header">Bảng thống kê</h5>
                   <div class="table-responsive text-nowrap">
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Project</th>
-                          <th>Client</th>
-                          <th>Users</th>
-                          <th>Status</th>
+                          <th>Mã sản phẩm</th>
+                          <th>Tên sản phẩm</th>
+                          <th>Số lượng</th>
+                          <th>Doanh thu</th>
                           <th>Actions</th>
                         </tr>
                       </thead>
@@ -564,5 +587,6 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="../assets/js/quanlydaily.js"></script>
   </body>
 </html>

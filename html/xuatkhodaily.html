@@ -136,22 +136,45 @@
               </a>
   
               <ul class="menu-sub active">
-                <li class="menu-item active">
+                <li>
                   <a href="Daily1.html" class="menu-link">
-                    <div data-i18n="Without menu">Sản phẩm</div>
+                    <div >Sản phẩm</div>
                   </a>
                 </li>
-                <li class="menu-item active">
-                  <a href="thong-ke-dai-ly.html" class="menu-link">
-                    <div data-i18n="Without menu">Thống kê</div>
-                  </a>
-                </li>
-                <li class="menu-item active">
-                  <a href="javascript:void(0);" class="menu-link">
-                    <div data-i18n="Without menu">Bảo hành</div>
-                  </a>
-                </li>
-              </ul>
+                
+                <ul class="menu-inner py-1">
+                  <li class="menu-item">
+                    <a href="thong-ke-dai-ly.html" class="menu-link menu-toggle">
+                      <div data-i18n="Without navbar">Thống kê</div>
+                    </a>
+                    <ul class="menu-sub">
+                      <li class="menu-item">
+                        <a href="thong-ke-dai-ly.html" class="menu-link">
+                          <div data-i18n="Without menu">Theo tháng</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="thong-ke-dai-ly.html" class="menu-link">
+                          <div data-i18n="Without navbar">Theo quý</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="thong-ke-dai-ly.html" class="menu-link">
+                          <div data-i18n="Container">Theo năm</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                 
+                  
+                  <li>
+                    <a href="baohanhdaily.html" class="menu-link">
+                      <div data-i18n="Without menu">Bảo hành</div>
+                    </a>
+                  
+                  </li>
+                </ul>
               </li>
           </ul>
         </aside>
@@ -289,7 +312,7 @@
                             <div class="mb-3 row">
                               <label for="html5-datetime-local-input" class="col-md-2 col-form-label">Thời gian</label>
                               <div class="col-md-10">
-                                <input class="form-control" type="datetime-local" value="2022-12-22T12:30:00" id="html5-datetime-local-input">
+                                <input class="form-control" type="date" value="2022-12-22" id="html5-datetime-local-input">
                               </div>
                             </div>
 
