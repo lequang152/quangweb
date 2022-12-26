@@ -27,12 +27,12 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Account settings - Account | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Quản lý đại lý</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.icon" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -71,7 +71,7 @@
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
-            <a href="BigCorpIndex.html" class="app-brand-link">
+            <a href="DaiLy1.html" class="app-brand-link">
               <span class="app-brand-logo demo">
                 <svg
                   width="25"
@@ -100,7 +100,7 @@
                   </defs>
                   <g id="g-app-brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="Brand-Logo" transform="translate(-27.000000, -15.000000)">
-                      <g id="Icon" transform="translate(27.000000, 15.000000)">
+                      <g id="Icon" transform="trasnslate(27.000000, 15.000000)">
                         <g id="Mask" transform="translate(0.000000, 8.000000)">
                           <mask id="mask-2" fill="white">
                             <use xlink:href="#path-1"></use>
@@ -127,28 +127,31 @@
                   </g>
                 </svg>
               </span>
-              <span class="app-brand-text demo menu-text fw-bolder ms-2">BigCorp</span>
+              <span class="app-brand-text ms-2" style="font-size: 30px; font-weight: bolder;">Đại Lý</span>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
               <i class="bx bx-chevron-left bx-sm align-middle"></i>
             </a>
           </div>
-
-          <div class="menu-inner-shadow"></div>
-
+          
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
             <li class="menu-item active open" style ="">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-layout"></i>
+                <i class="menu-icon tf-icons bx bx-table"></i>
                 <div data-i18n="Layouts">Quản lý đại lý</div>
               </a>
   
                 <ul class="menu-sub active">
                   <li class="menu-item active">
-                    <a href="javascript:void(0);" class="menu-link">
+                    <a href="Daily1.html" class="menu-link">
                       <div data-i18n="Without menu">Sản phẩm</div>
+                    </a>
+                  </li>
+                  <li class="menu-item active">
+                    <a href="thong-ke-dai-ly.html" class="menu-link">
+                      <div data-i18n="Without menu">Thống kê</div>
                     </a>
                   </li>
                   <li class="menu-item active">
@@ -158,8 +161,8 @@
                   </li>
                 </ul>
               </li>
-  
           </ul>
+
         </aside>
         <!-- / Menu -->
 
@@ -178,19 +181,6 @@
             </div>
 
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-              <!-- Search -->
-              <div class="navbar-nav align-items-center">
-                <div class="nav-item d-flex align-items-center">
-                  <i class="bx bx-search fs-4 lh-0"></i>
-                  <input
-                    type="text"
-                    class="form-control border-0 shadow-none"
-                    placeholder="Search..."
-                    aria-label="Search..."
-                  />
-                </div>
-              </div>
-              <!-- /Search -->
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
@@ -275,56 +265,237 @@
           <div class="content-wrapper">
             <!-- Content -->
 
-              <div class="container-xxl flex-grow-1 container-p-y">
-                <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Quản lý đại lý /</span>Tiêu Thụ </h4>
-
-                <div class="row">
-                  <div class="col-md-12">
+            <div class="container-xxl flex-grow-1 container-p-y">
+                <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Tables /</span> Basic Tables</h4>
+  
+                <!-- Basic Bootstrap Table -->
+                <div class="card">
+                  <h5 class="card-header">Table Basic</h5>
                   <div class="table-responsive text-nowrap">
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>ID</th>
-                          <th>Loại sản phẩm</th>
-                          <th>Tên sản phẩm</th>
-                          <th>Mã khách hàng</th>
-                          <th>Tên khách hàng</th>
-                          <th>Ngày mua</th>
-                          <th>Trạng thái sp</th>
+                          <th>Project</th>
+                          <th>Client</th>
+                          <th>Users</th>
+                          <th>Status</th>
+                          <th>Actions</th>
                         </tr>
                       </thead>
                       <tbody class="table-border-bottom-0">
                         <tr>
-                          <td><strong>1</strong></td>
-                          <td>Ví giả da</td>
+                          <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Angular Project</strong></td>
+                          <td>Albert Cook</td>
                           <td>
-                            Ví giả da đen PU
+                            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                              <li
+                                data-bs-toggle="tooltip"
+                                data-popup="tooltip-custom"
+                                data-bs-placement="top"
+                                class="avatar avatar-xs pull-up"
+                                title="Lilian Fuller"
+                              >
+                                <img src="../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle" />
+                              </li>
+                              <li
+                                data-bs-toggle="tooltip"
+                                data-popup="tooltip-custom"
+                                data-bs-placement="top"
+                                class="avatar avatar-xs pull-up"
+                                title="Sophia Wilkerson"
+                              >
+                                <img src="../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" />
+                              </li>
+                              <li
+                                data-bs-toggle="tooltip"
+                                data-popup="tooltip-custom"
+                                data-bs-placement="top"
+                                class="avatar avatar-xs pull-up"
+                                title="Christina Parker"
+                              >
+                                <img src="../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" />
+                              </li>
+                            </ul>
                           </td>
-                          <td>2002</td>
-                          <td>Hoàng Lê Quang</td>
-                          <td>20/11/2022</td>
-                          <td style="color:green">Còn bảo hành</td>
-                          <td><button>Bảo hành ngay</button></td>
+                          <td><span class="badge bg-label-primary me-1">Active</span></td>
+                          <td>
+                            <div class="dropdown">
+                              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                  ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                                >
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                  ><i class="bx bx-trash me-1"></i> Delete</a
+                                >
+                              </div>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
-                          <td><strong>1</strong></td>
-                          <td>Ví giả da</td>
+                          <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>React Project</strong></td>
+                          <td>Barry Hunter</td>
                           <td>
-                            Ví giả da nâu
+                            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                              <li
+                                data-bs-toggle="tooltip"
+                                data-popup="tooltip-custom"
+                                data-bs-placement="top"
+                                class="avatar avatar-xs pull-up"
+                                title="Lilian Fuller"
+                              >
+                                <img src="../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle" />
+                              </li>
+                              <li
+                                data-bs-toggle="tooltip"
+                                data-popup="tooltip-custom"
+                                data-bs-placement="top"
+                                class="avatar avatar-xs pull-up"
+                                title="Sophia Wilkerson"
+                              >
+                                <img src="../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" />
+                              </li>
+                              <li
+                                data-bs-toggle="tooltip"
+                                data-popup="tooltip-custom"
+                                data-bs-placement="top"
+                                class="avatar avatar-xs pull-up"
+                                title="Christina Parker"
+                              >
+                                <img src="../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" />
+                              </li>
+                            </ul>
                           </td>
-                          <td>2001</td>
-                          <td>Đoàn Văn Nam</td>
-                          <td>18/11/2018</td>
-                          <td style="color: red;">Hết bảo hành</td>
-                          <td><button disabled>Bảo hành ngay</button></td>
+                          <td><span class="badge bg-label-success me-1">Completed</span></td>
+                          <td>
+                            <div class="dropdown">
+                              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                  ><i class="bx bx-edit-alt me-2"></i> Edit</a
+                                >
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                  ><i class="bx bx-trash me-2"></i> Delete</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><i class="fab fa-vuejs fa-lg text-success me-3"></i> <strong>VueJs Project</strong></td>
+                          <td>Trevor Baker</td>
+                          <td>
+                            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                              <li
+                                data-bs-toggle="tooltip"
+                                data-popup="tooltip-custom"
+                                data-bs-placement="top"
+                                class="avatar avatar-xs pull-up"
+                                title="Lilian Fuller"
+                              >
+                                <img src="../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle" />
+                              </li>
+                              <li
+                                data-bs-toggle="tooltip"
+                                data-popup="tooltip-custom"
+                                data-bs-placement="top"
+                                class="avatar avatar-xs pull-up"
+                                title="Sophia Wilkerson"
+                              >
+                                <img src="../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" />
+                              </li>
+                              <li
+                                data-bs-toggle="tooltip"
+                                data-popup="tooltip-custom"
+                                data-bs-placement="top"
+                                class="avatar avatar-xs pull-up"
+                                title="Christina Parker"
+                              >
+                                <img src="../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" />
+                              </li>
+                            </ul>
+                          </td>
+                          <td><span class="badge bg-label-info me-1">Scheduled</span></td>
+                          <td>
+                            <div class="dropdown">
+                              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                  ><i class="bx bx-edit-alt me-2"></i> Edit</a
+                                >
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                  ><i class="bx bx-trash me-2"></i> Delete</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Bootstrap Project</strong>
+                          </td>
+                          <td>Jerry Milton</td>
+                          <td>
+                            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                              <li
+                                data-bs-toggle="tooltip"
+                                data-popup="tooltip-custom"
+                                data-bs-placement="top"
+                                class="avatar avatar-xs pull-up"
+                                title="Lilian Fuller"
+                              >
+                                <img src="../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle" />
+                              </li>
+                              <li
+                                data-bs-toggle="tooltip"
+                                data-popup="tooltip-custom"
+                                data-bs-placement="top"
+                                class="avatar avatar-xs pull-up"
+                                title="Sophia Wilkerson"
+                              >
+                                <img src="../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" />
+                              </li>
+                              <li
+                                data-bs-toggle="tooltip"
+                                data-popup="tooltip-custom"
+                                data-bs-placement="top"
+                                class="avatar avatar-xs pull-up"
+                                title="Christina Parker"
+                              >
+                                <img src="../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" />
+                              </li>
+                            </ul>
+                          </td>
+                          <td><span class="badge bg-label-warning me-1">Pending</span></td>
+                          <td>
+                            <div class="dropdown">
+                              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                  ><i class="bx bx-edit-alt me-2"></i> Edit</a
+                                >
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                  ><i class="bx bx-trash me-2"></i> Delete</a
+                                >
+                              </div>
+                            </div>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
-                  
                 </div>
-              </div>
-            </div>
+                <!--/ Basic Bootstrap Table -->
+  
+                <hr class="my-5" />
             <!-- / Content -->
 
             <!-- Footer -->

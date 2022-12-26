@@ -15,7 +15,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Production Move - Quản lý vòng đời sản phẩm</title>
+    <title>Xuất kho</title>
 
     <meta name="description" content="" />
 
@@ -135,18 +135,23 @@
                 <div data-i18n="Layouts">Quản lý đại lý</div>
               </a>
   
-                <ul class="menu-sub active">
-                  <li class="menu-item active">
-                    <a href="javascript:void(0);" class="menu-link">
-                      <div data-i18n="Without menu">Sản phẩm</div>
-                    </a>
-                  </li>
-                  <li class="menu-item active">
-                    <a href="javascript:void(0);" class="menu-link">
-                      <div data-i18n="Without menu">Bảo hành</div>
-                    </a>
-                  </li>
-                </ul>
+              <ul class="menu-sub active">
+                <li class="menu-item active">
+                  <a href="Daily1.html" class="menu-link">
+                    <div data-i18n="Without menu">Sản phẩm</div>
+                  </a>
+                </li>
+                <li class="menu-item active">
+                  <a href="thong-ke-dai-ly.html" class="menu-link">
+                    <div data-i18n="Without menu">Thống kê</div>
+                  </a>
+                </li>
+                <li class="menu-item active">
+                  <a href="javascript:void(0);" class="menu-link">
+                    <div data-i18n="Without menu">Bảo hành</div>
+                  </a>
+                </li>
+              </ul>
               </li>
           </ul>
         </aside>
@@ -167,19 +172,6 @@
             </div>
 
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-              <!-- Search -->
-              <div class="navbar-nav align-items-center">
-                <div class="nav-item d-flex align-items-center">
-                  <i class="bx bx-search fs-4 lh-0"></i>
-                  <input
-                    type="text"
-                    class="form-control border-0 shadow-none"
-                    placeholder="Search..."
-                    aria-label="Search..."
-                  />
-                </div>
-              </div>
-              <!-- /Search -->
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
@@ -268,42 +260,43 @@
                     <!-- Form controls -->
                     <div class="col-12">
                         <div class="card mb-4">
-                        <h5 class="card-header">Xuất Kho</h5>
+                        <h5 class="card-header">HÓA ĐƠN XUẤT KHO</h5>
                         <div class="card-body">
-                          <div class="mb-3">
-                            <label for="exampleFormControlInput2" class="form-label">Mã khách hàng</label>
-                            <input
-                                type="email"
-                                class="form-control"
-                                id="exampleFormControlInput1"
-                                placeholder="Mã khách hàng"
-                            />
-
+                          <div class="mb-3 row">
+                            <label for="html5-tel-input" class="col-md-2 col-form-label">Mã khách hàng</label>
+                            <div class="col-md-10">
+                              <input class="form-control" type="text" id="html5-tel-input"
+                              placeholder="Nhập mã...">
                             </div>
-                            <div class="mb-3">
-                            <label for="exampleFormControlInput2" class="form-label">Tên khách hàng</label>
-                            <input
-                                type="email"
-                                class="form-control"
-                                id="exampleFormControlInput1"
-                                placeholder="Tên khách hàng"
-                            />
+                          </div>
+                            
+                            <div class="mb-3 row">
+                              <label for="html5-tel-input" class="col-md-2 col-form-label">Tên khách hàng</label>
+                              <div class="col-md-10">
+                                <input class="form-control" type="text" id="html5-tel-input"
+                                placeholder="Nhập tên...">
+                              </div>
                             </div>
 
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput2" class="form-label">Số điện thoại</label>
-                              <input
-                                  type="number"
-                                  class="form-control"
-                                  id="exampleFormControlInput1"
-                                  placeholder="Số điện thoại"
-                              />
+                            <div class="mb-3 row">
+                              <label for="html5-tel-input" class="col-md-2 col-form-label">Số điện thoại</label>
+                              <div class="col-md-10">
+                                <input class="form-control" type="number" id="html5-tel-input"
+                                placeholder="Nhập số điện thoại...">
+                              </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                              <label for="html5-datetime-local-input" class="col-md-2 col-form-label">Thời gian</label>
+                              <div class="col-md-10">
+                                <input class="form-control" type="datetime-local" value="2022-12-22T12:30:00" id="html5-datetime-local-input">
+                              </div>
                             </div>
 
                             <div class="mb-3">
                               <label for="exampleFormControlSelect1" class="form-label">Loại sản phẩm</label>
                               <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                                  <option selected>Chọn sản phẩm</option>
+                                  <option selected>Chọn loại sản phẩm</option>
                                   <option value="1">Ví da</option>
                                   <option value="2">Ví giả da</option>
                                   <option value="3">Ví cao cấp</option>
@@ -311,13 +304,13 @@
                             </div>
 
                             <div class="mb-3">
-                              <label for="exampleFormControlInput1" class="form-label">Tên sản phẩm</label>
-                              <input
-                                  type="email"
-                                  class="form-control"
-                                  id="exampleFormControlInput1"
-                                  placeholder="Tên sản phẩm"
-                              />
+                              <label for="exampleFormControlSelect1" class="form-label">Sản phẩm</label>
+                              <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                                  <option selected>Chọn sản phẩm</option>
+                                  <option value="1">Ví 1</option>
+                                  <option value="2">Ví 2</option>
+                                  <option value="3">Ví 3</option>
+                              </select>
                             </div>
                             
                             <div class="mb-3 row">
@@ -338,7 +331,7 @@
                             <div class="mb-3 row">
                               <label for="html5-number-input" class="col-md-2 col-form-label">Thành tiền</label>
                               <div class="col-md-10">
-                                <input class="form-control" type="number" value="18000" id="html5-number-input">
+                                <input class="form-control" type="number" value="18000" id="html5-number-input" disabled>
                               </div>
                             </div>
 
@@ -383,7 +376,7 @@
 
     <div class="buy-now">
       <a
-        href="nhapkho.html"
+        href="nhapkhodaily.html"
         class="btn btn-danger btn-buy-now"
         >Nhập Kho</a>
     </div>
