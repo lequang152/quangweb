@@ -608,11 +608,16 @@ function getSelectValue() {
 }
 
 
+//User name:
+//check tài khoản rỗng
+//Không cho nhập kí tự đặc biệt
+//Bỏ khoảng trống ở đầu và cuối
 
+//Password: phải 8 kí tự
 
-//Check tai khoan
+//Check tai khoan trùng
 
-function handleButton() {    
+function handleInput() {    
     var listAccounts = accounts.map(function(item, index) {
         return item.userName;
     }); 
