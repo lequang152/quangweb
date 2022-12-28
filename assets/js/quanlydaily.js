@@ -552,16 +552,24 @@ const data = [
         ]
         }
 ]
+
+const accounts = [
+    {
+        "userName": "quang",
+        "password": "quang123"
+},
+    {
+        "userName": "nam",
+        "password": "Nam@"
+
+}]
+
 var brands = document.getElementById("brand");
 var products = document.getElementById("product");
 
-// function renderBrand(data) {
-//     for (const x of data) {
-//         brands.options[brands.options.length] = new Option(x.brand, x.id);
-//     }
-// }
+//Lọc
 
-//lấy các loại 
+//lấy các kiểu sp 
 function handleBrand(data) {
     return data.brand;
 }
@@ -597,6 +605,25 @@ function getSelectValue() {
     for (const k of getProducts) {
         products.options[products.options.length] = new Option(k);
     }
-
 }
 
+
+
+
+//Check tai khoan
+
+function handleButton() {    
+    var listAccounts = accounts.map(function(item, index) {
+        return item.userName;
+    }); 
+    var inputUserName = document.getElementById("user-name").value;
+    var checked = accounts.find(function(item, index) {
+        return item.userName === inputUserName
+    })
+    console.log(checked)
+    if(checked != null) {
+        document.getElementById("label").innerHTML = "Tài khoản đã tồn tại"
+    } else {
+        document.getElementById("label").innerHTML = ""
+    }
+}
